@@ -12,11 +12,11 @@ const index = () => {
         style={styles.backgroundImage}
       >
 
-        <Text style={styles.titleHome}>Beer site</Text>
+        <Text style={styles.titleHome}>Bier site</Text>
 
         <Link style={styles.exploreLink} href="/beerList" asChild>
           <Pressable style={styles.exploreButton}>
-            <Text style={styles.exploreText}>Beer List</Text>
+            <Text style={styles.exploreText}>Bier Lijst</Text>
           </Pressable>
         </Link>
       
