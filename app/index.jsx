@@ -14,7 +14,7 @@ const index = () => {
 
         <Text style={styles.titleHome}>This is a test with testing</Text>
 
-        <Link style={styles.exploreLink} href="/explore" asChild>
+        <Link style={styles.exploreLink} href="/beerList" asChild>
           <Pressable style={styles.exploreButton}>
             <Text style={styles.exploreText}>Explore</Text>
           </Pressable>
