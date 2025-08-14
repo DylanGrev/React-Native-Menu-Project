@@ -32,6 +32,7 @@ const BeerList = () => {
     }
   };
 
+
   // Haalt data van de API 1x op daarna niet meer
   useEffect(() => {
     getAPIData();

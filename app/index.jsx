@@ -7,16 +7,16 @@ const index = () => {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={require('@/assets/images/Moon-Background.png')}
+        source={require('@/assets/images/Beer-Background.png')}
         contentFit='cover'
         style={styles.backgroundImage}
       >
 
-        <Text style={styles.titleHome}>This is a test with testing</Text>
+        <Text style={styles.titleHome}>Beer site</Text>
 
         <Link style={styles.exploreLink} href="/beerList" asChild>
           <Pressable style={styles.exploreButton}>
-            <Text style={styles.exploreText}>Explore</Text>
+            <Text style={styles.exploreText}>Beer List</Text>
           </Pressable>
         </Link>
       
@@ -50,12 +50,6 @@ const styles = StyleSheet.create({
     marginBottom: 120,
   },
   exploreLink: {
-    // color: 'white',
-    // fontSize: 20,
-    // textAlign: 'center',
-    // textDecorationLine: 'underline',
-    // backgroundColor: 'rgba(44, 43, 43, 0.5)',
-    // padding: 4,
     marginHorizontal: 'auto'
   },
 
