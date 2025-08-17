@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, ActivityIndicator, FlatList } from 'react-native';
+import { View, Text, StyleSheet, ActivityIndicator, FlatList, Image } from 'react-native';
 import React, { useEffect, useState } from 'react';
 
 const BeerList = () => {
@@ -21,8 +21,8 @@ const BeerList = () => {
     // maakt van de php API een Json
       const result = await response.json();
 
-      // verander hoeveel items je wilt zien verander de 2e getal om meer of minder bieren te zien
-      setData(result.slice(0, 20));
+      
+      setData(result);
 
     } catch (err) {
       setError(err.message);
@@ -79,12 +79,15 @@ const BeerList = () => {
             <Text style={styles.beerFermentation}>Gisting: {item.gisting}</Text>
 
             {/* het alcohol% word gegeven als 0,011(als voorbeeld) dus doe ik x 100 om het goed te zien */}
-            <Text style={styles.beerPerc}>
-              Alcohol%: {(item.perc * 100).toFixed(1)}%
-            </Text>
-
+            <Text style={styles.beerPerc}>Alcohol%: {(item.perc * 100).toFixed(1)}%</Text>
 
             <Text style={styles.beerPrice}>Prijs: €{item.inkoop_prijs}</Text>
+
+            <Image
+              style={styles.beerImage}
+              source={require('@/assets/images/Biertje.png')}
+            />
+
           </View>
         )}
       />
@@ -108,9 +111,14 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
   },
   beerItem: {
-    padding: 10,
-    borderBottomWidth: 1,
-    borderBottomColor: '#ccc',
+    // padding: 10,
+    // borderBottomWidth: 1,
+    // borderBottomColor: '#ccc',
+    display: "flex",
+    alignItems: "flex-start",
+    gap: "1rem",
+    border: "1px solid #ccc",
+    padding: "10px",
   },
   beerName: {
     fontSize: 18,
@@ -145,5 +153,15 @@ const styles = StyleSheet.create({
   error: {
     color: 'red',
     fontSize: 16,
+  },
+
+  beerImage: {
+    // width: 50,
+    // height: 50,
+    // marginTop: 10,
+    width: "64px",
+    height: "64px",
+    objectFit: "contain",
+    background: "lightgray"
   },
 });
