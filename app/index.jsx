@@ -19,6 +19,11 @@ const index = () => {
             <Text style={styles.exploreText}>Bier Lijst</Text>
           </Pressable>
         </Link>
+        <Link style={styles.exploreLink} href="/beerListEigenAPI" asChild>
+          <Pressable style={styles.exploreButton}>
+            <Text style={styles.exploreText}>Bier Lijst(eigen API)</Text>
+          </Pressable>
+        </Link>
       
       </ImageBackground>
     </View>
