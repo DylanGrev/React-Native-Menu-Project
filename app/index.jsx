@@ -25,6 +25,21 @@ const index = () => {
           </Pressable>
         </Link>
       
+
+       <Link style={styles.exploreLink} href="/readEigenAPI" asChild>
+          <Pressable style={styles.exploreButton}>
+            <Text style={styles.exploreText}>Read ID(eigen API)</Text>
+          </Pressable>
+
+        </Link>
+
+       <Link style={styles.exploreLink} href="/Test" asChild>
+          <Pressable style={styles.exploreButton}>
+            <Text style={styles.exploreText}>Test</Text>
+          </Pressable>
+
+        </Link>
+
       </ImageBackground>
     </View>
   )
