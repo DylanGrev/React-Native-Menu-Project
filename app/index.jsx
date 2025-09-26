@@ -33,6 +33,13 @@ const index = () => {
 
         </Link>
 
+        <Link style={styles.exploreLink} href="/createEigenAPI" asChild>
+          <Pressable style={styles.exploreButton}>
+            <Text style={styles.exploreText}>Create Data(eigen API)</Text>
+          </Pressable>
+
+        </Link>
+
        <Link style={styles.exploreLink} href="/Test" asChild>
           <Pressable style={styles.exploreButton}>
             <Text style={styles.exploreText}>Test</Text>
