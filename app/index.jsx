@@ -40,6 +40,20 @@ const index = () => {
 
         </Link>
 
+       <Link style={styles.exploreLink} href="/updateEigenAPI" asChild>
+          <Pressable style={styles.exploreButton}>
+            <Text style={styles.exploreText}>Update(eigen API)</Text>
+          </Pressable>
+
+        </Link>
+
+      <Link style={styles.exploreLink} href="/deleteEigenAPI" asChild>
+          <Pressable style={styles.exploreButtonDelete}>
+            <Text style={styles.exploreText}>Delete(eigen API)</Text>
+          </Pressable>
+      
+      </Link>
+
        <Link style={styles.exploreLink} href="/Test" asChild>
           <Pressable style={styles.exploreButton}>
             <Text style={styles.exploreText}>Test</Text>
@@ -84,6 +98,11 @@ const styles = StyleSheet.create({
     height: 60,
     borderRadius: 20,
     backgroundColor: 'rgba(47, 47, 47, 0.75)',  
+  },
+    exploreButtonDelete: {
+    height: 60,
+    borderRadius: 20,
+    backgroundColor: 'rgba(82, 34, 34, 0.76)',  
   },
 
   exploreText: {
