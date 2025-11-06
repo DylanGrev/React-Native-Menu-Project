@@ -27,7 +27,6 @@ function LoginPage() {
 
       if (response.ok && text.includes('Login gelukt')) {
         loginBool = true;
-        asyncStorage.setItem('isLoggedIn',loginBool);
         setLoginMessage('Login successful!');
         console.log('Logged in with username:', username, 'and password:', password, loginBool);
       } else {
