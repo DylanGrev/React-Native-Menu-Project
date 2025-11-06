@@ -1,12 +1,19 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text, StyleSheet } from "react-native";
+import React from "react";
 
 const Test = () => {
   return (
-    <View>
-      <Text>Test</Text>
+    <View style={styles.container}> 
+      <Text> Hallo </Text>
     </View>
-  )
-}
+  );
+};
 
-export default Test
+export default Test;
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#fff',
+    flex: 1,
+  },
+});

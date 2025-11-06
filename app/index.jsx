@@ -54,6 +54,13 @@ const index = () => {
       
       </Link>
 
+      <Link style={styles.exploreLink} href="/logIn" asChild>
+          <Pressable style={styles.exploreButton}>
+            <Text style={styles.exploreText}>log in</Text>
+          </Pressable>
+      
+      </Link>
+
        <Link style={styles.exploreLink} href="/Test" asChild>
           <Pressable style={styles.exploreButton}>
             <Text style={styles.exploreText}>Test</Text>
